@@ -36,13 +36,15 @@ interface EmailResponse {
 interface EmailItem {
   mail: string
   response: EmailResponse
-  expanded?: boolean // For toggling the dropdown
+  expanded?: boolean
 }
+
+const config = useRuntimeConfig()
 
 const emails = ref<EmailItem[]>([])
 
 const fetchMails = async () => {
-  const data = await $fetch<EmailItem[]>('http://127.0.0.1:8000/api/google/messages', {
+  const data = await $fetch<EmailItem[]>(`${config.public.baseUrl}/api/google/messages`, {
     method: 'GET',
     credentials: 'include'
   })
