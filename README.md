@@ -1,13 +1,13 @@
 https://github.com/user-attachments/assets/ccf4e5dd-b9c3-4c3a-99cc-40d87972647d
 
 # Tech Stack: 
-Python, FastAPI, Nuxt, Vue, Google Calendar API, OpenAI API
+Python, FastAPI, Nuxt, Vue, Google Mail API, OpenAI API
 
 # Setup Instructions
 
-# Enable Google Calendar API
-You can find detailed instructions on how to enable the Google Calendar API and create the necessary credentials by following this link:
-[Google Calendar API Guide](https://developers.google.com/workspace/calendar/api/quickstart/nodejs)
+# Enable Google Mail API
+You can find detailed instructions on how to enable the Google Mail API and create the necessary credentials by following this link:
+[Google Mail API Guide](https://developers.google.com/workspace/gmail/api/quickstart/js)
 
 This guide will walk you through the process in the Google Cloud Console. After setting up your credentials, **paste the downloaded `credentials.json` file into the `app` folder** and proceed with the backend setup below.
 
